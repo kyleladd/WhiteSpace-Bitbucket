@@ -13,7 +13,4 @@
 		search.push(wsParam);
 		location.href = location.pathname + '?' + search.join('&');
 	}
-
-	console.log('search:', search);
-	console.log('wsIndex:', wsIndex);
 })();
