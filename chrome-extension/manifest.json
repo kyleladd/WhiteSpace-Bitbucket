@@ -12,7 +12,7 @@
 			"19" : "img/icon_19.png",
 			"38" : "img/icon_38.png"
 		},
-		"default_title" : "White Space Diff for Bitbucket",
+		"default_title" : "White Space Diff for Bitbucket"
 	},
 	"content_scripts" : [
 		{
