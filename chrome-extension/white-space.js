@@ -1,7 +1,7 @@
 
 ;(function(){
 
-	var search 		= location.search.length
+	var search = location.search.length
 		? location.search.replace('?', '').split('&')
 		: []
 	;
