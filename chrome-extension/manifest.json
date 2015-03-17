@@ -1,8 +1,8 @@
 {
 	"manifest_version" : 2,
 	"name" : "White Space Diff for Bitbucket",
-	"version" : "1.1",
-	"description" : "Hide white space differences in Bitbucket pull requests.",
+	"version" : "1.2",
+	"description" : "Hide white space differences in Bitbucket pull requests and commits.",
 	"icons" : {
 		"48" : "img/icon_48.png",
 		"128" : "img/icon_128.png"
