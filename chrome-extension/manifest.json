@@ -1,7 +1,7 @@
 {
 	"manifest_version" : 2,
 	"name" : "White Space Diff for Bitbucket",
-	"version" : "1.3",
+	"version" : "1.4",
 	"description" : "Hide white space differences in Bitbucket pull requests and commits.",
 	"icons" : {
 		"48" : "img/icon_48.png",
@@ -17,12 +17,13 @@
 	"content_scripts" : [
 		{
 			"matches" : [
-				"https://bitbucket.org/*/pull-request/*",
-				"https://bitbucket.org/*/commits/*"
+				"https://bitbucket.org/*/commits/*",
+				"https://bitbucket.org/*/pull-request/*/*",
+				"https://bitbucket.org/*/pull-requests/*/*"
 			],
 			"exclude_matches" : [
-				"https://bitbucket.org/*/update/*",
-				"https://bitbucket.org/*/new?*"
+				"https://bitbucket.org/*/new?*",
+				"https://bitbucket.org/*/update/*"
 			],
 			"js" : ["white-space.js"]
 		}
