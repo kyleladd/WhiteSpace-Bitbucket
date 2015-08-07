@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Test Extension Options</title>
+	<style>
+		body: { padding: 10px; }
+		.invisible { visibility: hidden; }
+		#status {
+			background-color: #008dfd;
+			border-radius: 4px;
+			color: #fff;
+			padding: 0.2em 0.6em;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+
+	<p>
+		<label for="hide-ws">
+			<input type="checkbox" id="hide-ws">
+			Hide Bitbucket white space differences
+		</label>
+	</p>
+
+	<p>
+		<label for="use-tabs">
+			<input type="checkbox" id="use-tabs">
+			Override Bitbucket tabs
+		</label>
+	</p>
+
+	<p>
+		<label for="tab-space">
+			Tab size:
+		</label>
+
+		<input type="text" id="tab-space" />
+	</p>
+
+	<p style="text-align:right">
+		<button id="save">Save</button>
+	</p>
+
+	<p class="invisible" id="status">Options saved.</p>
+
+	<script src="options.js"></script>
+
+</body>
+</html>
