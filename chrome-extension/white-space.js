@@ -41,7 +41,7 @@
 
 			if (update) {
 
-				location.href = location.pathname
+				location.replace = location.pathname
 					+ '?'
 					+ search.join('&')
 					+ location.hash
