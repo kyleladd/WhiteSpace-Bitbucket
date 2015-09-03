@@ -41,11 +41,12 @@
 
 			if (update) {
 
-				location.replace = location.pathname
+				location.replace(
+					  location.pathname
 					+ '?'
 					+ search.join('&')
 					+ location.hash
-				;
+				);
 			}
 		}
 	);
