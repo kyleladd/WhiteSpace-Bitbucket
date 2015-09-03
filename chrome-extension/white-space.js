@@ -1,6 +1,7 @@
 
 ;(function(){
 
+	// Extension scoped variables.
 	var _qsArr 		= null;
 	var _settings 	= null;
 
@@ -8,6 +9,7 @@
 
 		init: function() {
 
+			// Set querystring array.
 			_qsArr = location.search.length
 				? location.search.replace('?', '').split('&')
 				: []
@@ -60,6 +62,7 @@
 
 		setExtensionSettings: function() {
 
+			// Get the extension settings and pass in defaults values.
 			chrome.storage.sync.get({
 					hideWS: 	true,
 					tabSpace: 	4,
@@ -67,6 +70,7 @@
 				},
 				function(settings) {
 
+					// Set extension scoped variable to hold the extension's settings.
 					_settings = settings;
 				}
 			);
@@ -74,6 +78,7 @@
 
 		updateQueryString: function() {
 
+			// Find if any parameters where added to the query string.
 			var isTabs 	= _methods.isTabsParamAdded();
 			var isWS 	= _methods.isWhiteSpaceParamAdded();
 
