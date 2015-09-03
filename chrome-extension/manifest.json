@@ -3,7 +3,7 @@
 	"description" : "Set white space and tab size preferences for Bitbucket pull requests and commits.",
 
 	"manifest_version" : 2,
-	"version" : "1.6.1",
+	"version" : "2.0",
 
 	"icons" : {
 		"48" : "img/icon_48.png",
